@@ -1,56 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yinghe Zhu - Professional Profile</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./assets/images/1311.png"/>
+    <title>Unemployables Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+    <script defer src="./js/script.js"></script>
 </head>
 <body>
-<header>
-    <h1>Yinghe Zhu</h1>
-    <p>Business and Computer Science Professional</p>
-</header>
-<main>
-    <section>
-        <h2>About Me</h2>
-        <p>
-            I am Yinghe Zhu, a dedicated professional with a unique blend of expertise in both business and computer
-            science. I am passionate about utilizing technology to foster business growth and innovation. With a strong
-            foundation in these fields, I aim to bridge the gap between technical solutions and business strategies.
-        </p>
-    </section>
-    <section>
-        <h2>Portfolio</h2>
-        <ul>
-            <li><strong>Project A:</strong> A comprehensive business analytics tool that leverages big data to provide
-                actionable insights for enterprises.
-            </li>
-            <li><strong>Project B:</strong> An innovative e-commerce platform that integrates AI to enhance customer
-                experience and operational efficiency.
-            </li>
-            <li><strong>Project C:</strong> A cybersecurity solution designed to protect sensitive business information
-                using advanced encryption techniques.
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Contact Information</h2>
-        <p>
-            If you wish to get in touch, please reach out via email: <a href="mailto:yinghe@example.com">yinghe@example.com</a>
-        </p>
-    </section>
-    <section>
-        <h2>Connect with Me</h2>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/yinghe-zhu" target="_blank">LinkedIn</a>
-            <a href="https://github.com/litte-dao" target="_blank">GitHub</a>
+<!-- NAVBAR -->
+<div class="navbar">
+    <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">Hello World ^_^</span>
+        <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <a class="button" href="mailto:y578zhu@uwaterloo.ca">
+            <span class="button-text">Contact Me</span>
+        </a>
+    </a>
+</div>
+
+<!-- MAIN PAGE CONTENT -->
+<div id="main-content">
+
+    <!-- PORTFOLIO HEADER -->
+    <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+            <!--
+              TODO
+
+              - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+              - Change the number to point to your Unemployable & replace the OpenSea link with your own
+              - If you aren't using an Unemployable as your image, remove the entire "a" element
+            -->
+            <img src="./assets/images/1311.png" class="portfolio-header-image">
+            <a class="no-underline" target="_blank"
+               href="https://opensea.io/assets/0xe0be388ab81c47b0f098d2030a1c9ef190691a8a/1311">
+                <span class="image-caption">By Little-Dao</span>
+            </a>
         </div>
-    </section>
-</main>
-<footer>
-    &copy; 2024 Yinghe Zhu. All rights reserved.
-</footer>
-<script src="scripts.js"></script>
+
+        <!--
+          TODO
+
+          - Change the main-title to whatver you want
+          - Change the body-text after that to a quick introduction to what you do
+          - Edit the button text if you feel like it. It will link to the projects section below.
+        -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+                <span class="main-title">Hey, I'm Howard Zhu.</span>
+                <div class="body-text">I’m a senior CS/BBA double degree student, a freelance developer and a bad
+                    golfer.
+                </div>
+            </div>
+            <a class="button" id="my-work-link">
+                <span class="button-text">Check out my projects(SEC related cool stuff)</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <!--
+      TODO
+
+      - Change the subheader-text to whatever header you want
+      - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+    -->
+    <div id="about-section">
+        <span class="subheader-text">My Background / About Me</span>
+        <div class="about-section-content">
+            <div class="body-text">I'm a nerd
+            </div>
+            <div class="body-text"> I was born in a fertilizer family, which nurtured my interest into agriculture, as
+                being a farmer has always been my dream. I had the chance to met with many top notch businessman in
+                Asia,
+                especially government representatives and international traders, which gave me a lot of insights into
+                the business world(although it's much harder than I expected).
+            </div>
+            <div class="body-text">
+                Thanks to my little well-off family, I had the chance to get in touch with computer much earlier than
+                other kids in China, which was half-half a curse and a blessing. Due to excessive screen-time, I am now
+                suffering from several severe eye diseases, but I also got the chance to learn programming and computer
+                science,
+                which I am gratful for.
+            </div>
+            <div class="body-text">
+                Personally, I make some robots(must watch on the website!), and I do some day trading(god i hate options), and a little gardening for food justice, these
+              three things are basically all I do besides golf and KFC with my friends.
+             I love to spend my time on C&O(Combinatorics and Optimization), it's just like my golfing, I suck at it, but I love it! YOLOed 80% of my electives on C&O courses, which is the only thing I felt worth my tuition for.
+        </div>
+          <div class="body-text">
+            That's it, that's my life. One last thing I think really cool to mention is that I learned my English conversational skill from watching South Park(not recommended for kids).
+    </div>
+
+    <!-- PROJECTS / MY WORK SECTION -->
+    <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">My Work / My Projects</span>
+
+        <div class="projects-container">
+            <!--
+              TODO
+
+              This is where the project cards live. Here's a base level project card for you to copy:
+              <div class="project-card">
+                <img src="./assets/images/IMAGE_NAME" class="project-image">
+                <div class="project-card-text-container">
+                  <div class="subheader-text project-title">PROJECT_NAME</div>
+                  <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+                </div>
+                <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                  <span class="button-text">Read More</span>
+                  <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+                </a>
+              </div>
+
+              - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                  - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                  - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+            -->
+            <div class="project-card">
+                <img src="./assets/images/desktop.jpeg" class="project-image">
+                <div class="project-card-text-container">
+                    <div class="subheader-text project-title">Spider Robo(must watch!)</div>
+                    <div class="body-text project-card-text">I copied from some genius's design and made a replicate of live spider robot with raspberry pi and lots of 3D printing.
+                    </div>
+                </div>
+                <a class="button" href="./project-pages/project-template.html">
+                    <span class="button-text">Read More</span>
+                    <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+                </a>
+            </div>
+            <div class="project-card">
+                <img src="./assets/images/code.jpeg" class="project-image">
+                <div class="project-card-text-container">
+                    <div class="subheader-text project-title">SEC-Index</div>
+                    <div class="body-text project-card-text">Some SEC-Index stuff, really cool like WRDS but for Uwaterloo, but still I recommend check out my spider robot.
+                    </div>
+                </div>
+                <a class="button" href="./project-pages/project-template.html">
+                    <span class="button-text">Read More</span>
+                    <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+                </a>
+            </div>
+            <div class="project-card">
+                <img src="./assets/images/sketchbook.jpeg" class="project-image">
+                <div class="project-card-text-container">
+                    <div class="subheader-text project-title">SEC Non-GAAP</div>
+                    <div class="body-text project-card-text">Just like what my prof told me:"Howard, I dont think it is possible to be done, it's like magic."
+
+                    </div>
+                </div>
+                <a class="button" href="./project-pages/project-template.html">
+                    <span class="button-text">Read More</span>
+                    <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div id="footer">
+       <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/yinghe-zhu/">
+        <image src="../assets/icons/linkedin-svgrepo-com.svg" class="footer-icon footer-icon-size"/>
+      </a>
+      <a class="icon-link" href="mailto:y578zhu@uwaterloo.ca">
+        <image src="../assets/icons/mail.svg" class="footer-icon footer-icon-size"/>
+      </a>
+</div>
 </body>
 </html>
