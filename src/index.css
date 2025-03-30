@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Global tweaks */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb; /* Tailwind gray-50 */
+  color: #111827; /* Tailwind gray-900 */
+}
+
+a {
+  @apply transition-colors duration-200;
+}
